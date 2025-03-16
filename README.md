@@ -2,6 +2,8 @@
 
 A Model Context Protocol (MCP) server for executing Python code and managing Python environments. This server allows Claude and other LLMs to run Python code, manage files, and work with Python packages.
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue.svg)](https://github.com/Timtech4u/python-mcp-server-)
+
 ## Features
 
 - **Code Execution**: Run Python code snippets or execute Python files
@@ -21,8 +23,8 @@ Before using this MCP server, ensure you have:
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/python-mcp-server.git
-cd python-mcp-server
+git clone https://github.com/Timtech4u/python-mcp-server-.git
+cd python-mcp-server-
 ```
 
 2. Install dependencies:
