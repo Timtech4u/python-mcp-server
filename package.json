@@ -1,0 +1,28 @@
+{
+  "name": "python-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for executing Python code and managing Python environments",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w"
+  },
+  "keywords": [
+    "mcp",
+    "python",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.5.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/uuid": "^9.0.7",
+    "typescript": "^5.3.3"
+  }
+}
