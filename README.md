@@ -15,7 +15,7 @@ A Model Context Protocol (MCP) server for executing Python code and managing Pyt
 
 Before using this MCP server, ensure you have:
 
-- [Node.js](https://nodejs.org/) 16 or higher installed
+- [Node.js](https://nodejs.org/) 22 or higher installed
 - [Python](https://www.python.org/downloads/) installed and available in your PATH
 - [Claude Desktop](https://claude.ai/download) or [Cline](https://github.com/saoudrizwan/cline) installed
 
@@ -29,7 +29,7 @@ cd python-mcp-server
 
 2. Install dependencies:
 ```bash
-npm install
+npm ci
 ```
 
 3. Build the project:
@@ -224,3 +224,18 @@ The server has a default 30-second timeout for code execution. If your code take
 ## License
 
 MIT
+
+## Verification
+
+Use Node.js 22+ and a Python 3 executable on `PATH`:
+
+```bash
+npm ci
+npm test
+npm audit
+```
+
+The integration test starts the actual stdio server, negotiates an MCP session,
+checks tool discovery, executes Python, and verifies file read/write/list behavior
+inside a temporary directory. SDK and UUID versions are pinned in both dependency
+files; the UUID package now supplies its own TypeScript declarations.
